@@ -9,6 +9,8 @@ class Config(object):
     API_HASH  = os.environ.get("API_HASH", "") # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', '') # ⚠️ Required
+    SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "arolinks.com")
+  SHORTLINK_API = os.environ.get('SHORTLINK_API', "c875f26d0002ec6d64143501d6dfe12357db27eb")
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
